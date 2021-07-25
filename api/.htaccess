@@ -1,0 +1,3 @@
+# Prevent core files
+RewriteRule /?\.env - [F,L]
+RewriteRule /?\.env\.sample - [F,L]

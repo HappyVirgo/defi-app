@@ -1,0 +1,132 @@
+@font-face {
+  font-display: swap;
+  font-family: "NeueMachina";
+  src: url("/Fonts/Neue Machina/NeueMachina-Regular.woff2") format("woff2"),
+    url("/Fonts/Neue Machina/NeueMachina-Regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "NeueMachina";
+  src: url("/Fonts/Neue Machina/NeueMachina-Bold.woff2") format("woff2"),
+    url("/Fonts/Neue Machina/NeueMachina-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NeueMachina";
+  src: url("/Fonts/Neue Machina/NeueMachina-Medium.woff2") format("woff2"),
+    url("/Fonts/Neue Machina/NeueMachina-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "NeueMontreal";
+  src: url("/Fonts/Neue Montreal/NeueMontreal-Regular.woff2") format("woff2"),
+    url("/Fonts/Neue Montreal/NeueMontreal-Regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "NeueMontreal";
+  src: url("/Fonts/Neue Montreal/NeueMontreal-Bold.woff2") format("woff2"),
+    url("/Fonts/Neue Montreal/NeueMontreal-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-display: swap;
+  font-family: "NeueMontreal";
+  src: url("/Fonts/Neue Montreal/NeueMontreal-Medium.woff2") format("woff2"),
+    url("/Fonts/Neue Montreal/NeueMontreal-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+h1,
+h2 {
+  font-family: NeueMachina, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+p {
+  letter-spacing: 1px;
+}
+
+a {
+  @apply hover:text-defi-blue;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus-within ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:focus-within ~ label,
+textarea:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-6 origin-0;
+}
+
+input:focus-within ~ label,
+textarea:focus-within ~ label {
+  @apply text-defi-blue;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  color: #1d1929;
+  font-family: NeueMontreal, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.video-caption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 75px;
+  line-height: 87px;
+  letter-spacing: -2px;
+  color: white;
+  bottom: 43px;
+  left: 48px;
+}
+
+.testimonals {
+  padding-top: 72px;
+}
+
+.testimonal-1 {
+  display: none;
+}
+.testimonal-3 {
+  display: none;
+}
+
+.contact-containter {
+  max-width: 814px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-line-height {
+    line-height: 4.2rem !important;
+  }
+  .testimonals {
+    padding-top: 142px;
+  }
+  .testimonal-1 {
+    display: flex;
+  }
+  .testimonal-3 {
+    display: flex;
+  }
+}
+
+/* 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
